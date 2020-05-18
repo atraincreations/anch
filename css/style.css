@@ -1,0 +1,223 @@
+
+.title-head {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #5ADBC5;
+    color: black;
+    text-align: center;
+}
+
+.welcome {
+    font-family: inherit;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+html {
+    color: #5ADBC5;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    background-image: url("/img/nook.png");
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    margin-left: 12px;
+    color: #5ADBC5;
+    padding: 20px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 37rem;
+    margin: 5rem auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(236, 239, 214, 0.925);
+    float: center;
+    padding: 10px;
+}
+
+.exchange {
+    text-align: center;
+}
+
+.stonks {
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.stonks input {
+    margin-left: 1%;
+    width: 6rem;
+}
+
+.trend-title {
+    font-family: inherit;
+    color: #5ADBC5;
+}
+
+.monday-text,
+.tuesday-text,
+.wednesday-text,
+.thursday-text,
+.friday-text,
+.saturday-text {
+    display: inline-block;
+}
+
+.predict {
+    margin: 5%;
+}
+
+.predict-btn {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.predict-btn:hover {
+    color: white;
+    background-color: #5ADBC5;
+}
+
+.predict-btn:focus {
+    outline: none;
+}
+
+.trend-description {
+    font-size: 150%;
+}
+
+.trend-suggestion {
+    color: black;
+    font-size: 80%;
+    padding-bottom: .5rem;
+}
+
+.use-below {
+    font-size: 60%;
+}
+.use-below #below-text {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+.turnip-title {
+    color: #5ADBC5;
+    text-transform: uppercase;
+}
+
+.turnip-btn {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.turnip-btn:hover {
+    color: white;
+    background-color: #5ADBC5;
+}
+
+.calculate {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 100;
+    color: black;
+    background-color: white;
+}
+
+.calculate:hover {
+    color: white;
+    background-color: #5ADBC5;
+}
+
+.calculate:focus {
+    outline: none;
+}
+
+.info-section-title {
+    color: #5ADBC5;
+}
+
+p {
+    color: black;
+    font-weight: light;
+}
+
+.purchase {
+    display: inline-block;
+}
+
+#purchase-price {
+    margin-left: 1%;
+}
+
+.amount {
+    display: inline-block;
+}
+
+#quantity {
+    margin-left: 1%;
+}
+
+.sell-price {
+    display: inline-block;
+}
+
+#sell-price {
+    margin-left: 1%;
+}
+
+.positive {
+    color: darkgreen;
+}
+
+.loss {
+    color: darkred;
+}
+
+.ad {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #5ADBC5; */
+    color: black;
+    text-align: right;
+}
+
+.name {
+    font-size: 10px;
+    font-family: inherit;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.name #watermark {
+    background-color: #ECEFD6;
+    padding: .5rem;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.5);
+}

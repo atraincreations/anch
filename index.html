@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="/img/nook_leaf.jpg">
+
+    <title>Animal Crossing</title>
+</head>
+<body>
+    <header>
+        <div class="title-head">
+            <div class="welcome">Welcome to the complete ACNH tool box</div>
+        </div>
+    </header>
+    <div class="whole-site">
+        <section class="exchange">
+            <div class="container">
+                <h2 class="turnip-title">Find a place to sell!</h2>
+                <button class="btn btn-success turnip-btn" onclick=" window.open('https://turnip.exchange/','_blank')">Turnip Exchange</button>
+            </div>
+        </section>
+
+        <section class="stonks">
+            <div class="container stalks">
+                <h2 class="trend-title">Sow Joan's Stalk Market Trend Prediction</h2>
+                <div class="monday">
+                    <p class="monday-text">Monday pricing: </p><input type="text" id="monday-morning" placeholder="morning price"><input type="text" id="monday-afternoon" placeholder="afternoon price">
+                </div>
+                <div class="tuesday">
+                    <p class="tuesday-text">Tuesday pricing: </p><input type="text" id="tuesday-morning" placeholder="morning price"><input type="text" id="tuesday-afternoon" placeholder="afternoon price">
+                </div>
+                <div class="wednesday">
+                    <p class="wednesday-text">Wednesday pricing: </p><input type="text" id="wednesday-morning" placeholder="morning price"><input type="text" id="wednesday-afternoon" placeholder="afternoon price">
+                </div>
+                <div class="thursday">
+                    <p class="thursday-text">Thursday pricing: </p><input type="text" id="thursday-morning" placeholder="morning price"><input type="text" id="thursday-afternoon" placeholder="afternoon price">
+                </div>
+                <div class="friday">
+                    <p class="friday-text">Friday pricing: </p><input type="text" id="friday-morning" placeholder="morning price"><input type="text" id="friday-afternoon" placeholder="afternoon price">
+                </div>
+                <div class="saturday">
+                    <p class="saturday-text">Saturday pricing: </p><input type="text" id="saturday-morning" placeholder="morning price"><input type="text" id="saturday-afternoon" placeholder="afternoon price">
+                </div>
+
+                <div class="predict">
+                    <button type="submit" class="predict-btn">Predict trend!</button>
+                </div>
+                
+
+                <div class="trend-prediction">
+                    <p class="trend-description">Market trend</p>
+                    <p class="trend-suggestion">Our suggestions</p>
+                    <p class="use-below"><span id="below-text"></span></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="whole"> 
+                    <h2 class="info-section-title">
+                        Turnip Profit Calculator
+                    </h2>
+                    <div class="info-section-purchase">
+                        <p class="purchase">Purchase price: </p><input type="text" id="purchase-price" placeholder="Buying price">
+                    </div>
+                    <div class="info-section-amount">
+                        <p class="amount">Turnip quantity: </p><input type="text" id="quantity" placeholder="# of stacks * 100">
+                    </div>
+                    <div class="info-section-sell">
+                        <p class="sell-price">Sell price: </p><input type="text" id="sell-price" placeholder="Selling price">
+                    </div>
+                    <button type="submit" class="calculate">Calculate bells!</button>
+                
+                    <div class="calc-price">
+                        <p class="total-purchase">Total purchase: <span class="start-value">$0</span></p>
+                        <p class="end-price">Sell value: <span class="end-value">$0</span></p>
+                        <p class="delta">Profit: <span class="profit">$0</span></p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+    </div>
+    <footer class="ad">
+        <div class="name">
+            <span id="watermark">created by @alexpunderwood</span>
+        </div>
+    </footer>
+    
+
+    <script type="text/javascript" src="js/brain.js"></script>
+</body>
+</html>
