@@ -78,12 +78,11 @@ body {
 }
 
 .predict {
-    margin: 5%;
+    margin: 2%;
 }
 
 .predict-btn {
     font-size: 1rem;
-    margin-bottom: 5%;
     font-family: inherit;
     font-weight: 100;
     text-transform: uppercase;
@@ -109,14 +108,19 @@ body {
 }
 
 .use-below {
-    font-size: 60%;
-}
-.use-below #below-text {
+    font-size: 30%;
     background-color: white;
     padding: .5rem;
     border-radius: 20px;
 }
-
+/*
+.use-below #below-text {
+    font-size: 60%;
+    background-color: white;
+    padding: .5rem;
+    border-radius: 20px;
+}
+*/
 .turnip-title {
     color: #5ADBC5;
     text-transform: uppercase;

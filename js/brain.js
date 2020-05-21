@@ -85,6 +85,8 @@ function evaluateInputs() {
 function standardStocks() {
     // low | u u u d d u u
     // low | up down up
+    $(".trend-description").text("You could be in a Standard Market");
+    $(".trend-suggestion").text("Low markets tend to climb throughout the week, and then drop significantly towards the end. They typically rise just before the week ends. Don't panic if it crashes, it may rise again by Saturday night.");
 }
 
 function suddenSpike() {
@@ -95,6 +97,8 @@ function suddenSpike() {
 function downwardTrend() {
     // m | u u d d d u u
     // medium | up down up
+    $(".trend-suggestion").text("These markets are like a reverse bell-curve. They start high, drop substantially, and then begin to rise to finish out the week. Sell quickly, or ride it out to the end. Don't panic on Wednesday when it's real low.");
+    $(".trend-description").text("You could be in a Downward Trending Market")
 }
 
 function slowSpike() {
@@ -112,13 +116,11 @@ function marketType() {
         if(valueArr[0] !== "" && valueArr[0] < lowMarket) {
             console.log("Low market");
             finalTrendArr.push("Low");
-            $(".trend-description").text("You could be in a Standard Market");
-            $(".trend-suggestion").text("Low markets tend to climb throughout the week, and then drop significantly towards the end. They typically rise just before the week ends. Don't panic if it crashes, it may rise again by Saturday night.");
+            standardStocks();
         } else if(valueArr[0] !== "" && valueArr[0] > lowMarket && valueArr[0] < highMarket) {
             console.log("Medium market");
             finalTrendArr.push("Medium");
-            $(".trend-suggestion").text("These markets are like a reverse bell-curve. They start high, drop substantially, and then begin to rise to finish out the week. Sell quickly, or ride it out to the end. Don't panic on Wednesday when it's real low.");
-            $(".trend-description").text("You could be in a Downward Trending Market")
+            downwardTrend();
         } else if(valueArr[0] !== "" && valueArr[0] > highMarket) {
             console.log("High market");
             finalTrendArr.push("High");
@@ -128,13 +130,11 @@ function marketType() {
             if(valueArr[1] < lowMarket) {
                 console.log("Low market");
                 finalTrendArr.push("Low");
-                $(".trend-suggestion").text("Low markets tend to climb throughout the week, and then drop significantly towards the end. They typically rise just before the week ends. Don't panic if it crashes, it may rise again by Saturday night.");
-                $(".trend-description").text("You could be in a Standard Market")
+                standardStocks();
             } else if(valueArr[1] > lowMarket && valueArr[1] < highMarket) {
                 console.log("Medium market");
                 finalTrendArr.push("Medium");
-                $(".trend-suggestion").text("These markets are like a reverse bell-curve. They start high, drop substantially, and then begin to rise to finish out the week. Sell quickly, or ride it out to the end. Don't panic on Wednesday when it's real low.");
-                $(".trend-description").text("You could be in a Downward Trending Market")
+                downwardTrend();
             } else if(valueArr[1] > highMarket) {
                 console.log("High market");
                 finalTrendArr.push("High");
@@ -170,7 +170,9 @@ $(".predict-btn").on("click", function(){
     console.log("clicked")
     evaluateInputs();
     marketType();
+
     $("#below-text").text("use the calculator below to see what kind of profit you could make!")
+    $("#below-text").addClass("use-below");
 });
 
 
